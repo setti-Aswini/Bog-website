@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>My Blog</h1></header>
+
+  <section class="form-section">
+    <h2>Create New Post</h2>
+    <input type="text" id="titleInput" placeholder="Enter Title" required />
+    <textarea id="contentInput" placeholder="Write your blog content..." required></textarea>
+    <button onclick="createPost()">Post</button>
+  </section>
+
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search blogs..." />
+  </section>
+
+  <section id="blogList"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
